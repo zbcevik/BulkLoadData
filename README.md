@@ -5,13 +5,21 @@ There is a required folder structure such as files.zip and metadata.json for eac
 
 Documents\
 ├── bulkloaddata.ps1           ← The PowerShell script
+
 └── Datasets\                  ← Folder containing all datasets
+
     ├── Dataset1\
+
     │   ├── metadata.json      ← Required: Dataset description
+    
     │   └── files.zip          ← Required: Data files (any files zipped)
+    
     ├── Dataset2\
+    
     │   ├── metadata.json
+    
     │   └── files.zip
+    
     └── ...
 
 Script Location: \\utl.utoronto.ca\Staff2025\Data\cevikzey\Documents\bulkloaddata.ps1
