@@ -1,6 +1,6 @@
 @'
 # Dataverse Bulk Upload Script
-$API_TOKEN = "6332b12e-d809-4001-b09c-a9e1c05f1c94"
+$API_TOKEN = "YOUR API HERE"
 $HOSTNAME = "https://demo.borealisdata.ca"
 $DATAVERSE_ALIAS = "zeynepcevik"
 $DIRECTORY = "\\utl.utoronto.ca\Staff2025\Data\cevikzey\Documents\Datasets"
