@@ -3,7 +3,7 @@
 $API_TOKEN = "YOUR API HERE"
 $HOSTNAME = "https://demo.borealisdata.ca"
 $DATAVERSE_ALIAS = "zeynepcevik"
-$DIRECTORY = "\\utl.utoronto.ca\Staff2025\Data\cevikzey\Documents\Datasets"
+$DIRECTORY = "Directory here"
 $WAIT = 0
 
 Write-Host "Starting bulk upload..." -ForegroundColor Green
