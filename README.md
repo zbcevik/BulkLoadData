@@ -1,4 +1,3 @@
-# BulkLoadData
 
 # Borealis Bulk Dataset Uploader
 
@@ -24,10 +23,13 @@ This Bash script automates the creation of datasets and the upload of associated
 - `curl` for API requests
 
 **Install `jq` on Ubuntu/Debian:**
+
 sudo apt update
+
 sudo apt install jq 
 
 **Install jq on macOS:**
+
 brew install jq
 
 ---
@@ -37,41 +39,60 @@ brew install jq
 **1. Clone this repository:**
 
 git clone https://github.com/YOUR_USERNAME/borealis-bulk-uploader.git
+
 cd borealis-bulk-uploader
 
 **2. Prepare your local directories:**
 LOCAL_DIRECTORY/
-├── Dataset1/
-│   ├── metadata.json
-│   └── files.zip
-├── Dataset2/
-│   ├── metadata.json
-│   └── files.zip
-└── ...
+
+ ├── Dataset1/
+
+    ├── metadata.json
+
+    └── files.zip
+
+ ├── Dataset2/
+
+     ├── metadata.json
+
+     └── files.zip
+
+ └── ...
 
 Each dataset folder must contain:
+
 - metadata.json → Dataset metadata
 - files.zip → ZIP archive of dataset files
 
 **3. Update the script variables:**
 
 API_TOKEN="YOUR_API_TOKEN"
+
 HOSTNAME="https://demo.borealisdata.ca"
+
 DATAVERSE_ALIAS="YOUR_DATAVERSE_ALIAS"
+
 DIRECTORY="LOCAL_DIRECTORY"
+
 WAIT=0
 
 **4. Run the script:**
 ./bulkloaddata.sh
 
 **5. Output:**
-Dataset creation response
-Extracted DOI
-Upload status
+- Dataset creation response
+
+- Extracted DOI
+
+- Upload status
+
 
 
 ---
-### Alternative Usage (Easy way)
+## Alternative Usage (Easy way)
 
 Copy and paste the Bash script into your terminal, after filling in your required information.
 
+---
+
+### This Bash script was developed with reference to the following GitHub script: https://github.com/kaitlinnewson/dataverse-tools/blob/master/bulkloaddata.sh
